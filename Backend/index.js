@@ -9,13 +9,13 @@ const PORT = process.env.PORT || 4000;
 
 app.use(
   cors({
-    origin: "*",
-  })  
+    origin: "*", 
+  })   
 );
-// Middleware
-app.use(express.json()); 
-  
-app.use("/api/v1", userRoutes);
+// Middleware  
+app.use(express.json());  
+     
+app.use("/api/v1", userRoutes);   
 
 // Static Files Access
 // app.use(express.static(path.join(__dirname, './fronted/build')));
